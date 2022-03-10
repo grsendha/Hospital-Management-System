@@ -69,8 +69,9 @@ class Application:
         self.phone_ent.place(x=250, y=300)
 
         # button to perform a command
-        self.submit = Button(self.left, text="Add Appointment", width=20, height=2, bg='steelblue', command=self.add_appointment)
-        self.submit.place(x=300, y=340)
+        self.submit = Button(self.left, text="Add Appointment", width=40, height=2, bg='steelblue',
+                             command=self.add_appointment, fg="lightgreen", font="courier 12 bold")
+        self.submit.place(x=210, y=380)
     
         # getting the number of appointments fixed to view in the log
         sql2 = "SELECT ID FROM appointments "
